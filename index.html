@@ -17,8 +17,8 @@
                 <div class="container navbar">
                     <a class="nav-toggler" href="#" role="button"><i class="fa-solid fa-bars fa-2xl"></i></a>
                     <ul class="nav-list">
-                        <li><a class="nav-link" href="#">Home</a></li>
-                        <li><a class="nav-link" href="#">About</a></li>
+                        <li><a class="nav-link" href="#home">Home</a></li>
+                        <li><a class="nav-link" href="#about">About</a></li>
                         <li><a class="nav-link" href="#">Projects</a></li>
                         <li><a class="nav-link" href="#">Contact</a></li>
                     </ul>
@@ -26,16 +26,42 @@
             </nav>
 
             <!-- Home section -->
-            <section>
-                <div class="container home">
+            <section id="home">
+                <div class="container home-flex">
                     <div>
-                        <h1>Corey D. Brown</h1>
+                        <h1>COREY D. BROWN</h1>
                         <p>College computer science student and aspiring software developer</p>
                     </div>
                 </div>
             </section>
 
         </header>
+
+        <main>
+            
+            <!-- About section -->
+            <section id="about">
+                <div class="container">
+                    <div class="about-flex">
+                        <div>
+                            <img src="img/computerchip.jpg">
+                        </div>
+                        <div>
+                            <h2>Hello There! I'm <span class="special-blue">Corey</span></h2>
+                            <p>
+                                I'm a Computer Science B.S. major at the University at Buffalo (State University of New York).
+                                <br>
+                                <br>
+                                I have experience with Python, Scala, Javascript, and HTML/CSS.
+                                <br>
+                                <br>
+                                I'm on a mission to learn as many technologies and tools as possible. Right now, I'm learning how to use the React framework.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
         <script src="js/myScript.js"></script>
     </body>
 </html>
