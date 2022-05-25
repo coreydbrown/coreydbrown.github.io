@@ -17,7 +17,7 @@ html {
 
 @media (max-width: 1000px) {
 	.container {
-		margin: 0 1rem;
+		margin: 0 2rem;
 	}
 }
 
@@ -27,8 +27,23 @@ html {
 	}
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3 {
 	font-family: 'Montserrat', sans-serif;
+	margin-bottom: 2rem;
+}
+
+h1 {
+	font-size: 4rem;
+}
+
+h2 {
+	font-size: 3rem;
+}
+
+h3 {
+	font-size: 2rem;
 }
 
 
@@ -69,7 +84,8 @@ nav {
 	font-size: 1.25rem;
 }
 
-.nav-link:hover {
+.nav-link:hover,
+.nav-link:focus {
 	color: white;
 	background-color: black;
 }
@@ -95,6 +111,7 @@ nav {
 		flex-direction: column;
 		width: 100%;
 		text-align: center;
+		padding-bottom: 0.5rem;
 	}
 
 	.nav-list.display-nav-list {
@@ -128,10 +145,6 @@ nav {
 	height: 100Vh;
 }
 
-.home-flex h1 {
-	font-size: 4rem;
-}
-
 .home-flex p {
 	font-size: 1.5rem;
 }
@@ -144,9 +157,14 @@ nav {
 
 /*About section - start*/
 
+#about {
+	padding: 4.5rem 0 10rem 0;
+}
+
 .about-flex {
 	width: 100%;
 	display: flex;
+	justify-content: center;
 	align-items: center;
 	gap: 7rem;
 }
@@ -161,13 +179,22 @@ nav {
 
 .about-flex > * {
 	flex: 1;
+	max-width: 600px;
 }
 
 @media (max-width: 1000px) {
+	#about {
+		padding: 4.5rem 0;
+	}
+
 	.about-flex {
 		flex-direction: column;
 		text-align: center;
 		gap: 1rem;
+	}
+
+	.about-flex img {
+		max-width: ;
 	}
 }
 
@@ -181,3 +208,45 @@ nav {
 
 
 
+/*Projects section - start*/
+
+#projects {
+	padding: 10rem 0;
+	text-align: center;
+}
+
+.projects-flex {
+	display: flex;
+	flex-direction: row;
+	align-items: stretch;
+	gap: 3rem;
+}
+
+.card {
+	flex: 1;
+	padding: 1rem;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media (max-width: 1000px) {
+	#projects {
+		padding: 4.5rem 0;
+	}
+
+	.projects-flex {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.card {
+		max-width: 400px;
+	}
+}
+
+@media (max-width: 600px) {
+	.projects-flex {
+		flex-direction: column;
+	}
+}
+
+/*Projects section - end*/
