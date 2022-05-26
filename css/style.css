@@ -82,6 +82,7 @@ nav {
 	display: block;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 1.25rem;
+	transition: .5s;
 }
 
 .nav-link:hover,
@@ -149,6 +150,26 @@ nav {
 	font-size: 1.5rem;
 }
 
+.social-links {
+	position: absolute;
+	bottom: 3em;
+}
+
+.github-link,
+.linkedin-link {
+	color: black;
+	margin: 1rem;
+	opacity: 0.6;
+	transition: .5s;
+}
+
+.github-link:hover,
+.github-link:focus,
+.linkedin-link:hover,
+.linkedin-link:focus {
+	opacity: 1;
+}
+
 /*Home section - end*/
 
 
@@ -158,7 +179,7 @@ nav {
 /*About section - start*/
 
 #about {
-	padding: 4.5rem 0 10rem 0;
+	padding: 10rem 0 5rem 0;
 }
 
 .about-flex {
@@ -184,7 +205,7 @@ nav {
 
 @media (max-width: 1000px) {
 	#about {
-		padding: 4.5rem 0;
+		padding: 4.5rem 0 0 0;
 	}
 
 	.about-flex {
@@ -230,7 +251,7 @@ nav {
 
 @media (max-width: 1000px) {
 	#projects {
-		padding: 4.5rem 0;
+		padding: 7rem 0 0 0;
 	}
 
 	.projects-flex {
@@ -250,3 +271,8 @@ nav {
 }
 
 /*Projects section - end*/
+
+
+
+
+
