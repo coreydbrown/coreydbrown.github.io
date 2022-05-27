@@ -31,15 +31,15 @@ h1,
 h2,
 h3 {
 	font-family: 'Montserrat', sans-serif;
-	margin-bottom: 2rem;
+	margin-bottom: 1.5rem;
 }
 
 h1 {
-	font-size: 4rem;
+	font-size: 3rem;
 }
 
 h2 {
-	font-size: 3rem;
+	font-size: 2.5rem;
 }
 
 h3 {
@@ -58,6 +58,7 @@ nav {
 	top: 0;
 	width: 100%;
 	background-color: white;
+	z-index: 100;
 }
 
 .navbar {
@@ -147,7 +148,7 @@ nav {
 }
 
 .home-flex p {
-	font-size: 1.5rem;
+	font-size: 1.25rem;
 }
 
 .social-links {
@@ -179,7 +180,7 @@ nav {
 /*About section - start*/
 
 #about {
-	padding: 10rem 0 5rem 0;
+	padding: 10rem 0 3rem 0;
 }
 
 .about-flex {
@@ -205,13 +206,13 @@ nav {
 
 @media (max-width: 1000px) {
 	#about {
-		padding: 4.5rem 0 0 0;
+		padding: 4rem 0 0 0;
 	}
 
 	.about-flex {
 		flex-direction: column;
 		text-align: center;
-		gap: 1rem;
+		gap: 2rem;
 	}
 
 	.about-flex img {
@@ -251,7 +252,7 @@ nav {
 
 @media (max-width: 1000px) {
 	#projects {
-		padding: 7rem 0 0 0;
+		padding: 5rem 0 0 0;
 	}
 
 	.projects-flex {
